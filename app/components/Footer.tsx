@@ -11,9 +11,7 @@ const Footer = () => {
           <div>
             <Link className="flex gap-2 items-center" to="/">
               <BookOpen />
-              <h3 className="text-base font-bold uppercase">
-                Barkeepers Handbook
-              </h3>
+              <h3 className="text-base font-bold uppercase">Drinks We Make</h3>
             </Link>
           </div>
           <div>
@@ -32,7 +30,7 @@ const Footer = () => {
       </footer>
       <article className="py-2">
         <Container>
-          <p>{`© ${new Date().getFullYear()} Barkeepers Handbook`}</p>
+          <p>{`© ${new Date().getFullYear()} Drinks We Make`}</p>
         </Container>
       </article>
     </section>

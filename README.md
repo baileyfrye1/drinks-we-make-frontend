@@ -1,3 +1,7 @@
+# UPDATE
+
+Backend is currently being refactored and expanded. Work is focused on bug fixes, testing, and new features before the next UI update.
+
 <!-- Table of Contents -->
 
 # Table of Contents

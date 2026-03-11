@@ -31,7 +31,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           content: "width=device-width, initial-scale=1",
         },
         {
-          title: "Barkeepers Handbook",
+          title: "Drinks We Make",
         },
       ],
       links: [

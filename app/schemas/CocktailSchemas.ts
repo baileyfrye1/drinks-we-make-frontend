@@ -27,7 +27,7 @@ const SingleCocktailSchema = z.object({
 export const CocktailListSchema = z.array(SingleCocktailSchema);
 
 export const AllCocktailsSchema = z.object({
-  cocktails: z.array(SingleCocktailSchema),
+  cocktails: CocktailListSchema,
   totalCount: z.number(),
 });
 

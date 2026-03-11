@@ -14,7 +14,7 @@ export const Route = createFileRoute("/cocktails/$cocktailId")({
     return response.data;
   },
   head: ({ loaderData }) => ({
-    meta: [{ title: `${loaderData.name} • Barkeepers Handbook` }],
+    meta: [{ title: `${loaderData.name} • Drinks We Make` }],
   }),
 });
 
