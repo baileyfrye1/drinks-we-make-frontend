@@ -83,4 +83,4 @@ Live Site URL: [barkeepershandbook.com](https://barkeepershandbook.com)
 
 ## Contact
 
-Bailey Frye - baileyafrye@comcast.net
+Bailey Frye - baileyafrye@gmail.com
