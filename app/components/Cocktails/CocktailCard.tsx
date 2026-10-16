@@ -4,6 +4,7 @@ import { Card, CardTitle } from "../ui/card";
 import SimpleRatingDetails from "../Ratings/SimpleRatingDetails";
 
 const CocktailCard = ({ cocktail }: { cocktail: SingleCocktailType }) => {
+  console.log(cocktail);
   return (
     <article key={cocktail.id}>
       <Link

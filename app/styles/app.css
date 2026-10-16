@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 @import 'tw-animate-css';
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Space+Grotesk:wght@400;500;600;700&display=swap");
 
 @utility auto-fit-* {
   --grid-min-col-size: 300px;
@@ -135,5 +136,281 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .coastal-shell {
+    color: #0f2d36;
+    font-family: "Space Grotesk", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+      sans-serif;
+  }
+
+  .coastal-display {
+    font-family: "DM Serif Display", ui-serif, Georgia, "Times New Roman", serif;
+    letter-spacing: -0.02em;
+  }
+
+  .coastal-card {
+    background: rgba(255, 255, 255, 0.88);
+    border: 1px solid rgba(15, 45, 54, 0.12);
+    box-shadow: 0 20px 45px rgba(10, 72, 92, 0.08);
+  }
+
+  .coastal-fun-card {
+    background: linear-gradient(135deg, #ffffff 0%, #fff8f1 100%);
+    border: 1px solid rgba(255, 126, 107, 0.25);
+    box-shadow: 0 24px 50px rgba(255, 126, 107, 0.18);
+  }
+
+  .coastal-chip {
+    background: rgba(110, 193, 200, 0.18);
+    border: 1px solid rgba(110, 193, 200, 0.35);
+    color: #0f5165;
+  }
+
+  .coastal-chip-sunset {
+    background: rgba(255, 126, 107, 0.2);
+    border: 1px solid rgba(255, 126, 107, 0.45);
+    color: #8a2f2f;
+  }
+
+  .coastal-chip-lime {
+    background: rgba(191, 235, 134, 0.25);
+    border: 1px solid rgba(191, 235, 134, 0.55);
+    color: #2c5f2f;
+  }
+
+  .coastal-grid {
+    background-image: linear-gradient(
+        rgba(15, 81, 101, 0.06) 1px,
+        transparent 1px
+      ),
+      linear-gradient(90deg, rgba(15, 81, 101, 0.06) 1px, transparent 1px);
+    background-size: 32px 32px;
+  }
+
+  .coastal-confetti {
+    background-image: radial-gradient(circle at 10% 20%, #ffd2c6 0, transparent 20%),
+      radial-gradient(circle at 90% 10%, #c9f3ff 0, transparent 25%),
+      radial-gradient(circle at 30% 90%, #fff3b0 0, transparent 25%),
+      radial-gradient(circle at 80% 80%, #d8f7c2 0, transparent 25%);
+  }
+
+  .coastal-image-tile {
+    position: relative;
+    overflow: hidden;
+    border-radius: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: linear-gradient(135deg, #ffb8a8 0%, #7ad0d6 55%, #6de6b3 100%);
+    padding: 24px;
+    min-height: 180px;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0 20px 50px rgba(15, 81, 101, 0.2);
+  }
+
+  .coastal-image-glow {
+    position: absolute;
+    inset: 12px;
+    border-radius: 24px;
+    background: radial-gradient(circle at top, rgba(255, 255, 255, 0.6), transparent 65%);
+    opacity: 0.8;
+  }
+
+  .coastal-polaroid {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 12px 12px 18px;
+    box-shadow: 0 20px 40px rgba(15, 81, 101, 0.18);
+    border: 1px solid rgba(15, 81, 101, 0.12);
+  }
+
+  .coastal-photo-window {
+    border-radius: 16px;
+    background: linear-gradient(135deg, #ffe1b8 0%, #ffd2f1 45%, #b6f2ff 100%);
+    height: 160px;
+  }
+
+  .tropic-shell {
+    color: #0b2230;
+    font-family: "Space Grotesk", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+      sans-serif;
+  }
+
+  .tropic-display {
+    font-family: "DM Serif Display", ui-serif, Georgia, "Times New Roman", serif;
+    letter-spacing: -0.01em;
+  }
+
+  .tropic-surface {
+    background: #fff6ea;
+  }
+
+  .tropic-card {
+    background: #ffffff;
+    border: 1px solid rgba(12, 35, 50, 0.12);
+    box-shadow: 0 20px 45px rgba(12, 35, 50, 0.08);
+  }
+
+  .tropic-badge {
+    background: rgba(24, 196, 200, 0.18);
+    border: 1px solid rgba(24, 196, 200, 0.45);
+    color: #0b5b66;
+  }
+
+  .tropic-chip {
+    background: rgba(255, 180, 0, 0.2);
+    border: 1px solid rgba(255, 180, 0, 0.5);
+    color: #7a4e00;
+  }
+
+  .tropic-chip-coral {
+    background: rgba(255, 107, 107, 0.2);
+    border: 1px solid rgba(255, 107, 107, 0.5);
+    color: #7d2a2a;
+  }
+
+  .tropic-chip-lime {
+    background: rgba(142, 227, 90, 0.25);
+    border: 1px solid rgba(142, 227, 90, 0.55);
+    color: #1f5a2c;
+  }
+
+  .tropic-nav-link {
+    background: #ffffff;
+    border: 1px solid rgba(12, 35, 50, 0.14);
+    color: #0b2230;
+  }
+
+  .tropic-hero {
+    border-radius: 28px;
+    background: #ffffff;
+    border: 1px solid rgba(12, 35, 50, 0.12);
+    box-shadow: 0 18px 36px rgba(12, 35, 50, 0.12);
+  }
+
+  .tropic-hero-content {
+    padding: 20px;
+  }
+
+  .tropic-photo {
+    position: relative;
+    height: 240px;
+    border-radius: 22px;
+    background: #18c4c8;
+    overflow: hidden;
+  }
+
+  .tropic-photo::before {
+    content: "";
+    position: absolute;
+    inset: -30px auto auto -30px;
+    width: 140px;
+    height: 140px;
+    border-radius: 999px;
+    background: rgba(255, 180, 0, 0.5);
+  }
+
+  .tropic-photo::after {
+    content: "";
+    position: absolute;
+    right: -40px;
+    bottom: -40px;
+    width: 160px;
+    height: 160px;
+    border-radius: 999px;
+    background: rgba(255, 107, 107, 0.45);
+  }
+
+  .tropic-photo-label {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 6px 12px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #0b2230;
+  }
+
+  .tropic-section {
+    border-radius: 28px;
+    border: 1px solid rgba(12, 35, 50, 0.1);
+    background: #ffffff;
+    padding: 28px;
+  }
+
+  .tropic-shape {
+    position: absolute;
+    border-radius: 999px;
+    opacity: 0.6;
+    filter: blur(0px);
+  }
+
+  .tropic-shape.shape-1 {
+    top: -60px;
+    right: -40px;
+    width: 200px;
+    height: 200px;
+    background: rgba(255, 180, 0, 0.5);
+  }
+
+  .tropic-shape.shape-2 {
+    bottom: -80px;
+    left: -60px;
+    width: 220px;
+    height: 220px;
+    background: rgba(24, 196, 200, 0.4);
+  }
+
+  .tropic-outline-button {
+    border: 1px solid rgba(12, 35, 50, 0.2);
+    color: #0b2230;
+    background: #ffffff;
+  }
+
+  .coastal-float {
+    animation: coastal-float 8s ease-in-out infinite;
+  }
+
+  .coastal-float-slow {
+    animation: coastal-float 12s ease-in-out infinite;
+  }
+
+  .coastal-shimmer {
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0.2),
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.2)
+    );
+    background-size: 200% 200%;
+    animation: coastal-shimmer 8s ease infinite;
+  }
+}
+
+@keyframes coastal-float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes coastal-shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }

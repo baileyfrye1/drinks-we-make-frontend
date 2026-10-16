@@ -9,7 +9,7 @@ const SimpleRatingDetails = ({
   return (
     <div className="flex items-center gap-1">
       <FaStar />
-      <span>{ratingsData.averageRating}</span>
+      <span>{ratingsData?.averageRating ?? "0"}</span>
     </div>
   );
 };
